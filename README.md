@@ -1,3 +1,8 @@
+---
+tags: pickerview, delegate, protocol
+languages: objc
+---
+
 # Pickin' Fruit
 
 One last delegate/protocol to warm up. Let's make a slot machine
