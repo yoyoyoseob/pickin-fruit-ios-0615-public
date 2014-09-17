@@ -36,6 +36,7 @@
                     </view>
                     <connections>
                         <outlet property="fruitPicker" destination="F47-h5-lWG" id="TBz-t9-d6M"/>
+                        <outlet property="spinButton" destination="CiY-dd-afd" id="UOS-yK-TH8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FISViewController : UIViewController 
-@property (strong, nonatomic) NSArray *spinner;
+@interface FISViewController : UIViewController
+
+@property (strong, nonatomic) NSArray *fruitsArray;
+@property (strong, nonatomic) IBOutlet UIPickerView *fruitPicker;
+@property (strong, nonatomic) IBOutlet UIButton *spinButton;
+
 @end

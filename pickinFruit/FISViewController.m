@@ -9,7 +9,7 @@
 #import "FISViewController.h"
 
 @interface FISViewController ()
-@property (strong, nonatomic) IBOutlet UIPickerView *fruitPicker;
+
 - (IBAction)spin:(id)sender;
 
 @end
@@ -21,7 +21,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    self.spinner = @[@"Apple",@"Orange",@"Banana",@"Pear",@"Grape", @"Kiwi", @"Mango", @"Blueberry", @"Raspberry"];
+    self.fruitsArray = @[@"Apple",@"Orange",@"Banana",@"Pear",@"Grape", @"Kiwi", @"Mango", @"Blueberry", @"Raspberry"];
 }
 
 - (void)didReceiveMemoryWarning
