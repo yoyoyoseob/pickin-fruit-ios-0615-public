@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		2AB06822039845CC91DE62CB /* libPods-pickinFruitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pickinFruitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		313CE51F19CA25D600255879 /* FISViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISViewControllerSpec.m; sourceTree = "<group>"; };
-		3D4BC7C3F5094E9FB08E8F11 /* Pods-pickinFruitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickinFruitTests.xcconfig"; path = "Pods/Pods-pickinFruitTests.xcconfig"; sourceTree = "<group>"; };
+		A61ED086550D3C296F08769E /* Pods-pickinFruitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickinFruitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pickinFruitTests/Pods-pickinFruitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D83147A5196584DB00264D9C /* pickinFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickinFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83147A8196584DB00264D9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D83147AA196584DB00264D9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +56,7 @@
 		D83147C7196584DB00264D9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D83147CF196584DB00264D9C /* pickinFruitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pickinFruitTests-Info.plist"; sourceTree = "<group>"; };
 		D83147D1196584DB00264D9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DADB1A280CFB37D542DACC6E /* Pods-pickinFruitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickinFruitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pickinFruitTests/Pods-pickinFruitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E11E3BAF05BBCE4B2DDC289 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A61ED086550D3C296F08769E /* Pods-pickinFruitTests.debug.xcconfig */,
+				DADB1A280CFB37D542DACC6E /* Pods-pickinFruitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D831479C196584DB00264D9C = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +100,7 @@
 				D83147CD196584DB00264D9C /* pickinFruitTests */,
 				D83147A7196584DB00264D9C /* Frameworks */,
 				D83147A6196584DB00264D9C /* Products */,
-				3D4BC7C3F5094E9FB08E8F11 /* Pods-pickinFruitTests.xcconfig */,
+				0E11E3BAF05BBCE4B2DDC289 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-pickinFruitTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pickinFruitTests/Pods-pickinFruitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6ABBFDFCEB0480A820728AC /* Check Pods Manifest.lock */ = {
@@ -441,7 +451,7 @@
 		};
 		D83147DB196584DC00264D9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D4BC7C3F5094E9FB08E8F11 /* Pods-pickinFruitTests.xcconfig */;
+			baseConfigurationReference = A61ED086550D3C296F08769E /* Pods-pickinFruitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pickinFruit.app/pickinFruit";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -464,7 +474,7 @@
 		};
 		D83147DC196584DC00264D9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D4BC7C3F5094E9FB08E8F11 /* Pods-pickinFruitTests.xcconfig */;
+			baseConfigurationReference = DADB1A280CFB37D542DACC6E /* Pods-pickinFruitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pickinFruit.app/pickinFruit";
 				FRAMEWORK_SEARCH_PATHS = (
